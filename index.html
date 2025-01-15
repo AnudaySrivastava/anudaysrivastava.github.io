@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuday's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a onclick="openPDF()" class="nav-resmue">Resume</a></li>
+
+    </ul>
+  </nav>
+
+  <section id="introduction" class="section">
+    <div class="intro-container">
+      <img src="WhatsApp Image 2024-08-14 at 23.34.02.jpeg" alt="Anuday's Photo" class="profile-photo">
+      <div>
+        <h1 class="intro-title">Hi, I am Anuday</h1>
+        <p>Welcome to my portfolio! I am Anuday Srivastava, a passionate Computer Science Engineer currently pursuing a Bachelor of Technology at BMSIT, Bangalore (2022-2026). As a proactive and quick learner, I am committed to teamwork and continuous professional growth. I have strong expertise in web development, with proficiency in HTML, CSS, and foundational JavaScript for creating responsive and interactive designs. My database management skills include practical experience with MongoDB, cloud databases, and a solid understanding of DBMS concepts. I’ve actively participated in hackathons, solving challenges and enhancing my technical abilities. Additionally, I have developed the front end of a website for an educational institution and completed a MongoDB project using Atlas. My academic journey is complemented by my passion for reading, playing chess, and watching movies, which fuel my creativity and analytical thinking. Fluent in English and Hindi, I am eager to apply my skills in a professional setting and contribute meaningfully to team success.</p>
+      </div>
+
+    </div>
+  </section>
+
+    <div class = "resume">
+        <button class="pdf-button" onclick="openPDF()" >Open Resume</button>
+    </div>
+
+  <script>
+    function openPDF() {
+      window.open('resume.pdf', '_blank');
+    }
+  </script>
+  <section id="skills" class="section">
+    <h2 class = "titles">Skills</h2>
+    <div class="skills-container">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Java</div>
+      <div class="card">MongoDB</div>
+      <div class="card">Mobile Development</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="titles">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Geolocation Attendance Tracker</h3>
+        <p>Tracks the attendance of employees leveraging the GPS Technology for reliable tracking.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://froggy101.netlify.app/index.html" target="_blank" style="text-decoration: none;">School Website</a></h3>
+        <p>Developed a website for a government school using real world data.</p>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="titles">Contact Me</h2>
+    <p>Email: srivastava061025@gmail.com</p>
+    <p>Phone: +91 8073408064</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anuday's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
